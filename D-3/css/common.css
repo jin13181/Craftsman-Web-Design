@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+a:visited {
+    color :#333;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+}
+
+.wrap {
+    width: 100%;
+    color: #333;
+}
+
+.top {
+    display: flex;
+}
+
+.topContainer {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 200px);
+}
+
+/* header */
+.header {
+    width:200px;
+    height: 850px;
+}
+
+.header h2 {
+    margin : 10px 0;
+}
+
+.gnb {
+    margin-top: 10px;
+}
+
+.gnb>ul>li>a {
+    display: block;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #437745;
+    color: #fff;
+}
+
+.gnb>ul>li:hover>a { /* hover 위치를 li로 잡아야 색상 변경에 좋음*/
+    background-color: burlywood;
+}
+
+.gnb>ul>li {
+    position:relative;
+}
+
+.lnb {
+    display: flex;
+    position: absolute; /* absolute를 지정하면 width값이 사라짐 */
+    width: calc(100% - 200px);
+    top: 0;
+    left: 190px;
+    display: none;
+    z-index: 9;
+}
+
+.lnb li a {
+    display: block;
+    width: 200px;
+    padding: 10px;
+}
+
+.lnb li a:hover {
+    background-color: bisque;
+}
+
+.menuBg {
+    background-color: rgba(8, 110, 38, 0.3);
+    width: calc(100% - 190px);
+    height: 158px;
+    position: absolute; /*기준을 따로 잡지 않으면 body기준으로 잡힘*/
+    top: 67px;
+    left: 190px;
+    display: none;
+    z-index: 55555;
+}
+
+.spotMenu {
+    display: flex;
+}
+
+.spotMenu li {
+    padding :10px;
+}
+
+.spotMenu li:last-child a {
+    padding-left: 10px;
+    border-left: 1px solid #333;
+}
+
+/* slide */
+.slide {
+    position: relative;
+    height: 400px;
+}
+
+.slide ul li {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.slide ul li .txt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 30px;
+    background-color: #333;
+    color: #fff;
+}
+
+.shortcuts {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 200px;
+    width: 60px;
+    text-align: center;
+    background-color: aquamarine;
+}
+.shortcuts a {
+    display: block;
+}
+
+/*tab*/
+.con {
+    height: 250px;
+}
+
+.tabmenu li {
+    display: inline-block;
+}
+
+.tabmenu li a {
+    display: block;
+    padding: 10px;
+    background-color: #437745;
+}
+
+.tabmenu li.on a {
+    background-color: violet;
+}
+
+.tabcon {
+    height: 80px;
+    background-color: #437745;
+}
+
+.gall ul {
+    display: flex;
+    gap : 30px;
+}

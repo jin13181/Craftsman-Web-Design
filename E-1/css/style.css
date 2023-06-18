@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color : inherit; 
+}
+
+img{
+    max-width: 100%;
+    vertical-align: top;
+}
+
+html {
+    height: 100%; /*필수*/
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+    height: 100%; /*필수*/
+}
+
+table, td {
+    border: 1px solid #000;
+    border-collapse: collapse; /* border가 두줄인걸 한줄로 바꿔주는 */
+    width: 100%;
+}
+
+table {
+    border-top: 3px solid #fb3b00;
+}
+
+.wrap {
+    height: 100%; /*필수*/
+}
+
+.wrap .top {
+    height : calc(100% - 120px); /*띄어쓰기 필수*/
+    display: flex;
+}
+
+/* header */
+.header {
+    height: 100%;
+    width: 200px;
+    padding-top : 20px;
+}
+
+.header h1 {
+    text-align: center;
+}
+
+.header nav {
+    padding-top : 20px;
+}
+
+.header nav>ul>li>a {
+    display: block; /**/
+    background-color: orange;
+    padding: 5px;
+    color : #fff;
+}
+
+.header nav>ul>li:hover>a {
+    background-color: rgb(41, 91, 186);
+}
+
+.header nav .subMenu {
+    display: none;
+}
+
+.header nav .subMenu>li>a {
+    display: block;
+    background-color: #ccc;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+.header nav .subMenu>li:hover>a {
+    background-color: rgb(31, 133, 86);
+}
+
+.header .spotmenu {
+    text-align: center;
+    padding: 10px;
+}
+
+.header .spotmenu a:last-child {
+    border-left : 1px solid #333; /* 1px solid 문법 잊지말기 */
+}
+
+/* contents */
+.contents {
+    height: 100%;
+    width: 400px;
+    padding : 20px;
+}
+
+.contents .banner a {
+    display: flex;
+}
+
+.contents .banner .imgBox {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    
+}
+
+.contents .banner .textBox {
+    width: 200px;
+}
+
+.notice {
+    margin-top: 20px;   
+}
+
+.notice h2 {
+    color : #fff;
+    font-size: 16px;
+    background-color: #fb3b00;
+    width:100px;
+    text-align: center;
+    padding : 10px;
+}
+
+.notice .title {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.gallery h2 {
+    color : #fff;
+    font-size: 16px;
+    background-color: #fb3b00;
+    width:100px;
+    text-align: center;
+    padding : 10px;
+}
+
+.gallery ul {
+    display: flex;
+}
+
+/* slide */
+.slide {
+    position: relative;
+    height: 100%;
+    width: calc(100% - 200px - 400px);
+    overflow: hidden;
+}
+
+.slide ul {
+    position : absolute;
+    top : 0;
+    left : 0; /* 이 값을 나중에 -100%, -200%해서 슬라이드 만듦 */
+    display: flex;
+    width: 300%; /* li의 3개 값 */
+}
+
+.slide ul li {
+    width: calc(100% / 3);
+    position: relative;
+}
+
+.slide p {
+    background-color: rgba(0,0,0,0.8);
+    color : #fff;
+    position:absolute;
+    /* 센터정렬 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* translate 잊지 말기 */
+}
+
+
+/* footer */
+.wrap .footer {
+    height: 120px;
+}

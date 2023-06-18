@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D유형 가로메뉴</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        a{text-decoration: none; color: inherit;}
+        li{list-style: none;}
+        .top{height: 800px; background: #999; display: flex;}
+        .contents{width: calc(100% - 200px);}
+        header{width: 200px; background: #888; padding-top: 50px;}
+        header h1{color: #fff; text-align: center; margin-bottom: 100px;}
+        /*메뉴CSS*/
+        
+
+        .slide{height: 400px; background: #777; }
+        .link{height: 150px; background: #666;}
+        .con{height: 250px; background: #555;}
+        footer{height: 120px; background: #333;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="top">
+            <header>
+                <h1>로고</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">MENU1</a>
+                            <ul class="sub">
+                                <li><a href="#">SUBMENU1-1</a></li>
+                                <li><a href="#">SUBMENU1-2</a></li>
+                                <li><a href="#">SUBMENU1-3</a></li>
+                                <li><a href="#">SUBMENU1-4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">MENU2</a>
+                            <ul class="sub">
+                                <li><a href="#">SUBMENU2-1</a></li>
+                                <li><a href="#">SUBMENU2-2</a></li>
+                                <li><a href="#">SUBMENU2-3</a></li>
+                                <li><a href="#">SUBMENU2-4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">MENU3</a>
+                            <ul class="sub">
+                                <li><a href="#">SUBMENU3-1</a></li>
+                                <li><a href="#">SUBMENU3-2</a></li>
+                                <li><a href="#">SUBMENU3-2</a></li>
+                                <li><a href="#">SUBMENU3-3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">MENU4</a>
+                            <ul class="sub">
+                                <li><a href="#">SUBMENU4-1</a></li>
+                                <li><a href="#">SUBMENU4-2</a></li>
+                                <li><a href="#">SUBMENU4-3</a></li>
+                                <li><a href="#">SUBMENU4-4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menuBg"></div>
+            </header>
+            <div class="contents">
+                <div class="slide"></div>
+                <div class="link"></div>
+                <div class="con"></div>
+            </div>
+        </div>
+        <footer></footer>
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>
