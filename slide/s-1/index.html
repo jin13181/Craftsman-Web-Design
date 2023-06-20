@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JUST쇼핑몰</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      .sliderWrap {
+        position: relative;
+      }
+      .sliderWrap > div {
+        display: none;
+      }
+      .sliderWrap > div:first-child {
+        display: block;
+      }
+      .sliderWrap .slider {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      .sliderWrap .slider img {
+        vertical-align: top; /*습관적으로 해주기*/
+      }
+      .sliderWrap .slider span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 10px 20px;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <h1 class="logo"></h1>
+        <nav class="nav">
+          <ul>
+            <li>
+              <a href="#">메뉴1</a>
+              <ul class="submenu">
+                <li><a href="#">서브메뉴1-1</a></li>
+                <li><a href="#">서브메뉴1-2</a></li>
+                <li><a href="#">서브메뉴1-3</a></li>
+                <li><a href="#">서브메뉴1-4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">메뉴2</a>
+              <ul class="submenu">
+                <li><a href="#">서브메뉴2-1</a></li>
+                <li><a href="#">서브메뉴2-2</a></li>
+                <li><a href="#">서브메뉴2-3</a></li>
+                <li><a href="#">서브메뉴2-4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">메뉴3</a>
+              <ul class="submenu">
+                <li><a href="#">서브메뉴3-1</a></li>
+                <li><a href="#">서브메뉴3-2</a></li>
+                <li><a href="#">서브메뉴3-3</a></li>
+                <li><a href="#">서브메뉴3-4</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">메뉴4</a>
+              <ul class="submenu">
+                <li><a href="#">서브메뉴4-1</a></li>
+                <li><a href="#">서브메뉴4-2</a></li>
+                <li><a href="#">서브메뉴4-3</a></li>
+                <li><a href="#">서브메뉴4-4</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <article id="slider">
+        <div class="sliderWrap">
+          <div class="slider s1">
+            <img src="./img/slider01.jpg" alt="이미지설명" />
+            <span>이미지1</span>
+          </div>
+          <div class="slider s2">
+            <img src="./img/slider02.jpg" alt="이미지설명" />
+            <span>이미지2</span>
+          </div>
+          <div class="slider s3">
+            <img src="./img/slider03.jpg" alt="이미지설명" />
+            <span>이미지3</span>
+          </div>
+        </div>
+      </article>
+
+      <section id="contents">
+        <article class="content1"></article>
+        <article class="content2"></article>
+        <article class="content3"></article>
+      </section>
+
+      <footer id="footer">
+        <div class="footer1"></div>
+        <div class="footer2"></div>
+        <div class="footer3"></div>
+      </footer>
+    </div>
+    <script src="./js/jquery-1.12.3.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
